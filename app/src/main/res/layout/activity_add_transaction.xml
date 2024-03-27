@@ -71,7 +71,7 @@
                     android:inputType="textPersonName"
                     android:singleLine="true" />
             </com.google.android.material.textfield.TextInputLayout>
-            <com.google.android.material.textfield.TextInputLayout
+           <!-- <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
@@ -83,10 +83,39 @@
                     android:layout_height="wrap_content"
                     android:hint="Payment Method"
                     android:textColor="@color/white"
-                    android:enabled="false"
+                    android:enabled="true"
                     android:singleLine="true" />
-            </com.google.android.material.textfield.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>-->
 
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/paymentMethodImg"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/gpay"
+                android:layout_marginStart="15dp"
+                />
+            <TextView
+                android:id="@+id/selectPaymentMethod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Payment Method"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginLeft="42dp"
+                android:background="@color/appColor"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
 
 
             <Button

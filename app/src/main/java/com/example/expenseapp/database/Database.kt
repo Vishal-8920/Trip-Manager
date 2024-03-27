@@ -7,7 +7,7 @@ import com.example.expenseapp.dao.TripDao
 import com.example.expenseapp.model.Model
 import com.example.expenseapp.model.Trip
 
-@Database(entities = [Model::class,Trip::class] , version = 2)
+@Database(entities = [Model::class,Trip::class] , version = 3)
 abstract class Database: RoomDatabase() {
     abstract  fun modelDao(): ModelDao
     abstract fun tripDao(): TripDao

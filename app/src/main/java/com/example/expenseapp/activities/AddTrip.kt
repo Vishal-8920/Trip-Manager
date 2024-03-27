@@ -38,7 +38,7 @@ class AddTrip : AppCompatActivity() {
 
                 val trip = Model(null,imageBytes,tripName)
                 DbBuilder.getdb(this)?.modelDao()?.insertModel(trip)
-                Toast.makeText(this, "Data Insert Successfully", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Trip Save Successfully", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
             }else if (imageBytes == null){

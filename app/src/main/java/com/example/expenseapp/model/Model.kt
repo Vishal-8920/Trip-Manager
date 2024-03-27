@@ -9,4 +9,5 @@ data class Model(
     val id:Long? = null,
     val tripImage:ByteArray? = null,
     val tripName:String? = null
+    /*val destination : List<Trip>? = null*/
 )

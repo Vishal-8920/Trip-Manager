@@ -15,7 +15,8 @@ class TransAdapter(private var dataList: List<Trip>) : RecyclerView.Adapter<Tran
     class MyViewHolder(var binding: RvTransationBinding) : RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        val binding = RvTransationBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding =
+            RvTransationBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return MyViewHolder(binding)
     }
 
@@ -27,11 +28,12 @@ class TransAdapter(private var dataList: List<Trip>) : RecyclerView.Adapter<Tran
 
         val trip: Trip = dataList[position]
 
-       /* val bitmap = BitmapFactory.decodeByteArray(trip.cardImg, 0, trip.cardImg!!.size)
-        holder.binding.imgCard.setImageBitmap(bitmap)*/
+        val bitmap = BitmapFactory.decodeByteArray(trip.paymentImg, 0, trip.paymentImg!!.size)
+        holder.binding.imgCard.setImageBitmap(bitmap)
 
         holder.binding.name.text = trip.userName
-        holder.binding.amountPay.text= trip.amount.toString()
+        holder.binding.amountPay.text = trip.amount.toString()
         holder.binding.type.text = trip.paymentType
+
     }
 }

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:id="@+id/main"
     android:background="@color/bgColor"
-    tools:context=".activities.AddTripNameActivity">
+    tools:context=".AddTripNameActivity">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/addTripImg"

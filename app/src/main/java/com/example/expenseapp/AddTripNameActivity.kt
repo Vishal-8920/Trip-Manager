@@ -1,4 +1,4 @@
-package com.example.expenseapp.activities
+package com.example.expenseapp
 
 import android.app.Activity
 import android.content.Intent
@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.expenseapp.R
+import com.example.expenseapp.activities.TransactionHistoryActivity
 import com.example.expenseapp.database.DbBuilder
 import com.example.expenseapp.databinding.ActivityAddTripNameBinding
 import com.example.expenseapp.model.Model

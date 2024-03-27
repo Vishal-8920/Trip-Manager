@@ -16,7 +16,7 @@ class TransactionHistoryActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityTransactionHistoryBinding
     private lateinit var adapter: TransAdapter
-    var flag = -1
+  //  var flag = -1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityTransactionHistoryBinding.inflate(layoutInflater)
@@ -33,13 +33,7 @@ class TransactionHistoryActivity : AppCompatActivity() {
         setSupportActionBar(binding.materialToolbar)
         setTitle("Transaction History")
 
-        // here we are check intent apne saath kuch la raha h kya
-        if (intent.hasExtra("FLAG")){
-            flag =intent.getIntExtra("FLAG",-1)
-        }
-        if (flag==1){
 
-        }
 
         binding.floatingActionButton2.setOnClickListener {
             startActivity(Intent(this,AddTransactionActivity::class.java))
@@ -52,4 +46,10 @@ class TransactionHistoryActivity : AppCompatActivity() {
         adapter.notifyDataSetChanged()
 
     }
+    override fun onBackPressed(){
+        startActivity(Intent(this,MainActivity::class.java))
+        finish()
+        super.onBackPressed()
+    }
+
 }

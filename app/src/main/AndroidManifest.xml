@@ -30,7 +30,7 @@
             android:name=".activities.AddTransactionActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.AddTripNameActivity"
+            android:name=".AddTripNameActivity"
             android:exported="false" />
         <activity
             android:name=".activities.MainActivity"

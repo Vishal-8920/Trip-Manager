@@ -8,8 +8,7 @@ data class Trip(
     // schema of table
     @PrimaryKey(autoGenerate = true)
     var id: Int?=null,  // id stand for serial no
-    /*var cardImg :ByteArray?=null,
-    var tripName : String?,*/
+    var paymentImg :ByteArray?=null,
     var userName : String?,
     var amount :Double,
     var paymentType: String,
